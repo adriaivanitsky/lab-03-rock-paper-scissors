@@ -16,3 +16,9 @@ test('time to test a function', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
 });
+
+
+// test('user: rock throw: scissors', (expect) => {
+//     const expected = true;
+//     const actual = 
+// })

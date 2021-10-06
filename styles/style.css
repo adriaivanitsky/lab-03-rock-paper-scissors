@@ -17,3 +17,7 @@ main {
     width: 400px;
 
 }
+
+input[type=radio] {
+    display: none;
+}

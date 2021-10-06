@@ -1,5 +1,6 @@
 // import functions and grab DOM elements
-
+const button = document.getElementById('button');
+const 
 // initialize global state
 
 // set event listeners 
