@@ -25,11 +25,15 @@ button.addEventListener('click', ()=>{
 
   if(didUserWin(userChoice, computerChoice) === 'tied'){
     tiedCount++; tied.textContent = tiedCount;
+    result.textContent = 'You tied';
   } else if(didUserWin(userChoice, computerChoice) === 'win'){
     winCount++; win.textContent = winCount;
+    result.textContent = 'You win!';
   } else {
     loseCount++; lose.textContent = loseCount;
+    result.textContent = 'You lose :(';
   }
+  
 });
   // get user input
   // use user input to update state 
