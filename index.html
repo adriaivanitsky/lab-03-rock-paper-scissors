@@ -14,25 +14,30 @@
 
 <body>
     <main>
-       <label class="label">
-           <input type="radio" name="game" id="rock" value="rock">
-           <img id="rockphoto" src="" alt="rock">
-       </label>
+        <div id="top-half">
+            <label>
+                <input type="radio" name="game" id="rock" value="rock">
+                <img id="rockphoto" src="assets/rock_transparent_400x500.png" alt="rock">
+            </label>
 
-       <label>
-           <input type="radio" name="game" id="paper" value="paper">
-           <img id="paperphoto" src="" alt="paper">
-       </label>
+            <label>
+                <input type="radio" name="game" id="paper" value="paper">
+                <img id="paperphoto" src="assets/paper_transparent_400x500.png" alt="paper">
+            </label>
 
-       <label>
-           <input type="radio" name="game" id="scissors" value="scissors">
-           <img id="scissorsphoto" src="" alt="scissors">
-       </label>
-
-       <button id="button">Play!</button>
-       <p> You Won <span id="win">0</span> times</p>
-       <p> You Lost <span id="lost">0</span> times</p>
-       <p> You Tied <span id="tied">0</span> times</p>
+            <label>
+                <input type="radio" name="game" id="scissors" value="scissors">
+                <img id="scissorsphoto" src="assets/scissors_transparent_400x500.png" alt="scissors">
+            </label>
+        </div>
+      
+        <div id="bottom-half">
+            <button id="button">Play!</button>
+            <p></p>
+            <p> You Won <span id="win">0</span> times</p>
+            <p> You Lost <span id="lost">0</span> times</p>
+            <p> You Tied <span id="tied">0</span> times</p>
+        </div>
     </main>
     <footer>
         

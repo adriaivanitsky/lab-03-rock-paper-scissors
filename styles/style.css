@@ -3,21 +3,37 @@ body {
     font-family: 'Titillium Web', sans-serif;
     align-items: center;
     text-align: center;
+    background-color: bisque;
 }
 
-main {
+#top-half {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
 }
 
-#rockphoto {
-    width: 400px;
-
-}
 
 input[type=radio] {
     display: none;
+   
+
+}
+
+#bottom-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 30vw;
+    
+}
+
+img:hover {
+    cursor: pointer;
 }
