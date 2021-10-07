@@ -1,4 +1,4 @@
-export function didUserWin(){
+export function didUserWin(userChoice, computerChoice){
     if(userChoice === computerChoice){return 'tied'}
     else if(userChoice === 'rock' && computerChoice === 'scissors'){return 'win'}
     else if(userChoice === 'scissors' && computerChoice === 'paper'){return 'win'}

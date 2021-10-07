@@ -1,3 +1,5 @@
+import { didUserWin, getRandomThrow } from "./utils.js";
+
 // import functions and grab DOM elements
 const button = document.getElementById('button');
 const result = document.getElementById('result');
@@ -12,8 +14,24 @@ let tiedCount = 0;
 // set event listeners 
 
 button.addEventListener('click', ()=>{
+  console.log('the button was clicked!')
+  const selected = document.querySelector('input[type=radio]:checked');
+  if(!selected){
+    return error.classList.remove('hidden');
+  }
+  error.classList.add('hidden');
+  const userChoice = selected.value;
+  const computerChoice = getRandomThrow();
 
+  if(didUserWin(userChoice, computerChoice) === 'tied'){
+    tiedCount++; tied.textContent = tiedCount;
+  } else if(didUserWin(userChoice, computerChoice) === 'win'){
+    winCount++; win.textContent = winCount;
+  } else {
+    loseCount++; lose.textContent = loseCount;
+  }
 });
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+

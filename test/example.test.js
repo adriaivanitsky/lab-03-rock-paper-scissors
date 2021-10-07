@@ -1,4 +1,6 @@
 // IMPORT MODULES under test here:
+import { didUserWin } from "../utils.js";
+
 // import { example } from '../example.js';
 
 const test = QUnit.test;
@@ -22,3 +24,4 @@ test('time to test a function', (expect) => {
 //     const expected = true;
 //     const actual = 
 // })
+
