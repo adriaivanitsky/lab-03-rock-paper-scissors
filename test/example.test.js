@@ -21,7 +21,7 @@ test('user: rock computer: scissors', (expect) => {
 });
 
 test('user: paper computer: rock', (expect) => {
-    const expected = 'lose';
+    const expected = 'win';
     const actual = didUserWin('paper', 'rock');
     expect.equal(actual, expected);
 });
