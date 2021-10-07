@@ -1,4 +1,4 @@
-import { didUserWin, getRandomThrow } from "./utils.js";
+import { didUserWin, getRandomThrow } from './utils.js';
 
 // import functions and grab DOM elements
 const button = document.getElementById('button');
@@ -14,25 +14,25 @@ let tiedCount = 0;
 // set event listeners 
 
 button.addEventListener('click', ()=>{
-  console.log('the button was clicked!')
-  const selected = document.querySelector('input[type=radio]:checked');
-  if(!selected){
-    return error.classList.remove('hidden');
-  }
-  error.classList.add('hidden');
-  const userChoice = selected.value;
-  const computerChoice = getRandomThrow();
+    console.log('the button was clicked!');
+    const selected = document.querySelector('input[type=radio]:checked');
+    if (!selected){
+        return error.classList.remove('hidden');
+    }
+    error.classList.add('hidden');
+    const userChoice = selected.value;
+    const computerChoice = getRandomThrow();
 
-  if(didUserWin(userChoice, computerChoice) === 'tied'){
-    tiedCount++; tied.textContent = tiedCount;
-    result.textContent = 'You tied';
-  } else if(didUserWin(userChoice, computerChoice) === 'win'){
-    winCount++; win.textContent = winCount;
-    result.textContent = 'You win!';
-  } else {
-    loseCount++; lose.textContent = loseCount;
-    result.textContent = 'You lose :(';
-  }
+    if (didUserWin(userChoice, computerChoice) === 'tied'){
+        tiedCount++; tied.textContent = tiedCount;
+        result.textContent = 'You tied';
+    } else if (didUserWin(userChoice, computerChoice) === 'win'){
+        winCount++; win.textContent = winCount;
+        result.textContent = 'You win!';
+    } else {
+        loseCount++; lose.textContent = loseCount;
+        result.textContent = 'You lose :(';
+    }
   
 });
   // get user input
