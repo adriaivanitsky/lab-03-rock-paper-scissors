@@ -45,3 +45,8 @@ img:hover {
 p {
     line-height: 2px;
 }
+
+#result {
+    color: tomato;
+    font-size: 200%;
+}
