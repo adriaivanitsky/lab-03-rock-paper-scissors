@@ -1,6 +1,9 @@
 // import functions and grab DOM elements
 const button = document.getElementById('button');
-const 
+const result = document.getElementById('result');
+const win = document.getElementById('win');
+const lose = document.getElementById('lose');
+const tied = document.getElementById('tied'); 
 // initialize global state
 
 // set event listeners 
