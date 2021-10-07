@@ -37,3 +37,11 @@ img {
 img:hover {
     cursor: pointer;
 }
+
+.hidden {
+    display: none;
+}
+
+p {
+    line-height: 2px;
+}
