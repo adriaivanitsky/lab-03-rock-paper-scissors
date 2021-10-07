@@ -14,7 +14,6 @@ let tiedCount = 0;
 // set event listeners 
 
 button.addEventListener('click', ()=>{
-    console.log('the button was clicked!');
     const selected = document.querySelector('input[type=radio]:checked');
     if (!selected){
         return error.classList.remove('hidden');
